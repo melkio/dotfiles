@@ -1,0 +1,63 @@
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+        showbranch = auto
+	ui = true
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[user]
+	name = Alessandro Melchiori
+	email = alessandro.melchiori@codiceplastico.com
+
+[alias]
+	st = status -sb
+	co = checkout
+	cob = checkout -b
+	cp = cherry-pick
+
+	# show last commit
+	last = log -1 HEAD
+
+	# add all changes including untracked files 
+	# and then create a commit with message...
+	cm = !git add -A && git commit -m
+
+	# clean local files
+	cl = !git checkout . && git clean -fd
+
+	# remove not existing remote branches
+	# and sync remote changes
+	s = !git pull origin && git fetch origin --prune
+
+	# Get the current branch name 
+	# (not so useful in itself, but used in other aliases)
+	branch-name = "!git rev-parse --abbrev-ref HEAD"
+
+	# Push the current branch to the remote "origin" 
+	# and set it to track the upstream branch
+	p = "!git push -u origin $(git branch-name)"
+
+	# Delete the remote version of the current branch
+	up = "!git push origin :$(git branch-name)"
+
+	# delete branches which have been already merged to master
+	delete-merged-branches = "!git branch --merged master | grep -v '\\* master' | xargs -n 1 git branch -d"
+
+	# show a tree with all branches
+	tree = !git log --graph --decorate --all --oneline
+
