@@ -45,7 +45,7 @@ link_file () {
 
   if [ "$skip" != "true" ]
   then
-    sudo ln -s "$1" "$2"
+    ln -s "$1" "$2"
     success "linked $1 to $2"
   else  
     success "skipped $src"
