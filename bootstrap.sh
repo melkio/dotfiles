@@ -45,6 +45,7 @@ link_file () {
 
   if [ "$skip" != "true" ]
   then
+    mkdir -p $(dirname "$dst")
     ln -s "$1" "$2"
     success "linked $1 to $2"
   else  
