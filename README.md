@@ -1,7 +1,7 @@
 # dotfiles
 
 ```
-git clone git@github.com:melkio/dotfiles.git ~/.dotfiles
+git clone https://github.com/melkio/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 sh bootstrap.sh
 ```
