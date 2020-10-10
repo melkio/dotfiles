@@ -56,6 +56,8 @@ link_file () {
 link_file "$DOTFILES_ROOT/bash/.bashrc" "$HOME/.bashrc"
 link_file "$DOTFILES_ROOT/git/.gitconfig" "$HOME/.gitconfig"
 link_file "$DOTFILES_ROOT/i3/config" "$HOME/.config/i3/config"
+link_file "$DOTFILES_ROOT/i3/compton.conf" "$HOME/.config/i3/compton.conf"
+link_file "$DOTFILES_ROOT/xorg/.xsession" "$HOME/.xsession"
 
 echo ''
 echo '  All installed!'
