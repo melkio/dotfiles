@@ -53,7 +53,7 @@ link_file () {
   fi
 }
 
-#link_file "$DOTFILES_ROOT/bash/.bashrc" "$HOME/.bashrc"
+link_file "$DOTFILES_ROOT/bash/.bashrc" "$HOME/.bashrc"
 link_file "$DOTFILES_ROOT/git/.gitconfig" "$HOME/.gitconfig"
 link_file "$DOTFILES_ROOT/regolith/Xresources" "$HOME/.config/regolith/Xresources"
 #link_file "$DOTFILES_ROOT/i3/config" "$HOME/.config/i3/config"
