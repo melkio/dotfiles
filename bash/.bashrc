@@ -132,4 +132,5 @@ fi
 
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
-. $HOME/.asdf/plugins/dotnet-core/set-dotnet-home.bash
+
+export PATH=$PATH:~/.dotfiles/bin
