@@ -130,8 +130,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+for file in $(find $HOME/.dotfiles -name install.sh) 
+do
+  source $file  
+done
 
 for file in $(find $HOME/.dotfiles -name aliases.sh) 
 do
