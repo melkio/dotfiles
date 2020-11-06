@@ -133,4 +133,9 @@ fi
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 
+for file in $(find $HOME/.dotfiles -name aliases.sh) 
+do
+  source $file  
+done
+
 export PATH=$PATH:~/.dotfiles/bin
