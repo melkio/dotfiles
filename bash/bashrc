@@ -31,3 +31,4 @@ fi
 source ~/.dotfiles/asdf/install
 source ~/.dotfiles/asdf/alias
 source ~/.dotfiles/git/alias
+source ~/.dotfiles/dotnet/alias
