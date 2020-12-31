@@ -28,7 +28,9 @@ if ! shopt -oq posix; then
 fi
 
 # Configure shell extensions
-source ~/.dotfiles/asdf/install
-source ~/.dotfiles/asdf/alias
-source ~/.dotfiles/git/alias
-source ~/.dotfiles/dotnet/alias
+if [ -d "$HOME/.local/source" ] ; then
+    for file in $(find $HOME/.local/source) ; do
+      [ -r "$file" ] && [ -f "$file" ] && source "$file";
+    done;
+    unset file;
+fi
