@@ -30,3 +30,4 @@ fi
 # Configure shell extensions
 source ~/.dotfiles/asdf/install
 source ~/.dotfiles/asdf/alias
+source ~/.dotfiles/git/alias
