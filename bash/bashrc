@@ -1,0 +1,32 @@
+#!/bin/bash
+
+export LANG=en_US.UTF-8
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
+# Load the shell dotfiles
+for file in ~/.dotfiles/bash/{alias,export,options,prompt}; do
+    [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
+
+# Add tab completion for many Bash commands
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+
+# Configure shell extensions
+source ~/.dotfiles/asdf/aliases.sh
+source ~/.dotfiles/asdf/install.
