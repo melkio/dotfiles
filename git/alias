@@ -59,6 +59,8 @@ alias gs='git pull origin && git fetch origin --prune'
 alias gp='git push -u origin $(git_current_branch)'
 alias gup='git push origin :$(git_current_branch)'
 alias gtree='git log --graph --decorate --all --oneline'
+alias glog="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset' --date=short"
+alias gstat="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --stat"
 
 alias grb='git rebase'
 alias grba='git rebase --abort'
