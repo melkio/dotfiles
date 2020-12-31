@@ -28,5 +28,5 @@ if ! shopt -oq posix; then
 fi
 
 # Configure shell extensions
-source ~/.dotfiles/asdf/aliases.sh
-source ~/.dotfiles/asdf/install.
+source ~/.dotfiles/asdf/install
+source ~/.dotfiles/asdf/alias
