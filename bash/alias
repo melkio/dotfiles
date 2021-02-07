@@ -17,3 +17,8 @@ alias dot='cd ~/.dotfiles'
 alias play='cd ~/dev/playground'
 
 alias md='mkdir'
+
+function mcd() {
+    mkdir $1
+    cd $1
+}
