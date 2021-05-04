@@ -28,6 +28,7 @@ brew install wxmac
 brew install gpg
 brew install gawk
 brew install svn
+brew install neovim
 
 brew tap homebrew/cask-fonts
 brew install --cask font-source-code-pro
