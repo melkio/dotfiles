@@ -13,6 +13,8 @@ brew install --cask visual-studio-code
 brew install --cask virtualbox
 brew install --cask vagrant
 brew install --cask rectangle
+brew install --cask spotify
+brew install --cask karabiner-elements
 
 brew install --cask --no-quarantine alacritty 
 git clone https://github.com/alacritty/alacritty.git /tmp/alacritty
@@ -29,6 +31,11 @@ brew install gpg
 brew install gawk
 brew install svn
 brew install neovim
+brew install nnn
+brew install azure-cli
+brew tap azure/functions
+brew install azure-functions-core-tools@3
+brew install telnet
 
 brew tap homebrew/cask-fonts
 brew install --cask font-source-code-pro
@@ -40,6 +47,7 @@ asdf plugin-add dotnet-core https://github.com/emersonsoares/asdf-dotnet-core.gi
 asdf plugin-add nodejs 
 asdf plugin add erlang https://github.com/asdf-vm/asdf-erlang.git
 asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
+asdf plugin-add elm https://github.com/asdf-community/asdf-elm.git
 
 asdf plugin-add terraform https://github.com/asdf-community/asdf-hashicorp.git
 asdf plugin-add kubectl https://github.com/Banno/asdf-kubectl.git
