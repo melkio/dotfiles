@@ -9,6 +9,7 @@ CURRENT_DIR=$(pwd -P)
 brew install --cask google-chrome
 brew install --cask slack
 brew install --cask microsoft-teams
+brew install --cask zoom
 brew install --cask visual-studio-code
 brew install --cask virtualbox
 brew install --cask vagrant
