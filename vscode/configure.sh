@@ -7,6 +7,7 @@ extensions=(
     "josefpihrt-vscode.roslynator"
     "hashicorp.terraform"
     "Elmtooling.elm-ls-vscode"
+    "ms-vscode-remote.remote-containers"
 )
 
 for ext in "${extensions[@]}"
