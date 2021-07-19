@@ -17,6 +17,8 @@ brew install --cask vagrant
 brew install --cask rectangle
 brew install --cask spotify
 brew install --cask karabiner-elements
+brew install --cask microsoft-remote-desktop
+brew install --cask docker
 
 brew install --cask --no-quarantine alacritty 
 git clone https://github.com/alacritty/alacritty.git /tmp/alacritty
